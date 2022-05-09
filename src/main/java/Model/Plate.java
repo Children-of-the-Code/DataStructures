@@ -1,22 +1,36 @@
 package Model;
 
+import Service.PlateService;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.Objects;
 
 public class Plate {
 
-    private Color plateColor;
-    private Size plateSize;
+    public Color plateColor;
+    public Size plateSize;
 //    let's say that we are manufacturing plates that can be of several different colors
     public enum Color{
+        @JsonProperty("RED")
         RED,
+        @JsonProperty("WHITE")
         WHITE,
+        @JsonProperty("ORANGE")
         ORANGE,
+        @JsonProperty("BLUE")
         BLUE
     }
     public enum Size{
+        @JsonProperty("LARGE")
         LARGE,
+        @JsonProperty("SMALL")
         SMALL,
+        @JsonProperty("EXTRA_LARGE")
         EXTRA_LARGE
+    }
+
+    public Plate(){
+
     }
     public Plate(Color color, Size size){
         this.plateColor = color;

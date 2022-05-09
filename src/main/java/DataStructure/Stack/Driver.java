@@ -1,3 +1,5 @@
+package DataStructure.Stack;
+
 import DataStructure.Stack.TedsStack;
 import Model.Plate;
 

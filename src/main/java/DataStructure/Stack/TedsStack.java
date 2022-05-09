@@ -14,6 +14,13 @@ public class TedsStack {
      */
 //    No constructor: By default java proves a blank constructor automatically
 
+    /*
+    Stacks are also related to other similar DS:
+    Queues
+    A queue is first-in-first-out like a line at the store
+    A stack is last-in-first-out like a stack (of something)
+     */
+
     /*what do we need to start this data structure?
     interestingly... we don't even need something like an array
      */

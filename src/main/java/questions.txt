@@ -1,0 +1,15 @@
+why do we use length for arrays and size() for all data structions?
+length is a field of arrays, it's a regular variable (int)
+but the length of arraylists/linkelists/etc are private
+size() is a method that returns that length
+why size over length? not clear..
+my guess is that the physical length of data structures sometimes needs to be abstracted away
+(because the physical space used by an arraylist is not necessarily the amount of data stored
+because an arraylist doubles in size when it fills up)
+
+for p1:
+use a java data structure (most likely a combination of arraylist and hashset to solve your problems
+in a fake "repository" class)
+using the repository class will mirror how you have to interact with a database, which
+will first read from the DB over the internet and then load the persisted objects into
+a data structure
