@@ -61,12 +61,18 @@ public class Plate {
         return allPlates;
     }
     public boolean equals(Plate other) {
-        if(other.getPlateColor() == this.plateColor){
+        if(other.getPlateColor() == this.plateColor && other.getPlateSize() == this.plateSize){
             return true;
         }else{
             return false;
         }
     }
 
+    public Size getPlateSize() {
+        return plateSize;
+    }
 
+    public void setPlateSize(Size plateSize) {
+        this.plateSize = plateSize;
+    }
 }
