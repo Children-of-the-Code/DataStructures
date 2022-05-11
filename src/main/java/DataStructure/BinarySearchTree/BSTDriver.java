@@ -13,6 +13,8 @@ public class BSTDriver {
             }catch(AlreadyExistsException err){
 //                do something else here, like inform the user that the animal exists already
                 err.printStackTrace();
+            }catch(Exception someOtherException){
+//                do something else
             }
         }
         /*
@@ -93,3 +95,16 @@ public class BSTDriver {
          */
     }
 }
+/*
+time complexity of adding to end arraylist? O(1) - the time it takes to add to AL
+has no relationship to the amount of elements
+time complexity of adding to end linkedlist? O(N) - the time it takes scales
+directly with the amount of elements (because the entire LL must be traversed)
+time complexity of adding to BST? O(log(n)) - because the problem is split in half
+in every iteration, doubling the size only adds a single iteration to adding items
+
+w/r/t complexity - having a for loop generally makes a problem o(n)
+having a nested for loop (for loop inside for loop) makes a problem o(n^2)
+splitting problems in half in every loop iteration makes a problem o(log(n))
+
+ */
